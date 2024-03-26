@@ -17,12 +17,6 @@ function TodoApp() {
 
         setData(p => [...p, newPlan])
         setPlan("")
-
-        let items = document.querySelectorAll(".todo__item");
-
-        items.forEach(item => {
-            item.classList.add("todo__added");
-        });
     }
 
     const deleteItem = (id) => {
